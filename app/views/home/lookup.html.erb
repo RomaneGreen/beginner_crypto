@@ -1,0 +1,13 @@
+<h4>Crypto Currency lookup
+</h4>
+
+<%= form_tag home_lookup_path, method: :POST, class: "navbar-form navbar-left search-form" do %>
+<%= text_field_tag( 'search',nil,placeholder: "Enter Crypto Symbol",class: "form-control") %>
+<%= submit_tag 'Lookup Stock Quote' %>
+<% end %>
+<br>
+<br>
+
+<div class="container">
+<%=@symbol%>
+</div>
