@@ -3,10 +3,11 @@
 <table class='table table-striped table-bordered table-hover'>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Symbol</th>
       <th>Cost per</th>
       <th>Amount owned</th>
-      <th colspan="3"></th>
+
     </tr>
   </thead>
 
@@ -18,26 +19,20 @@
           <tr>
             <% for x in @lookup_crypto %>
               <% if crypto.symbol == x["symbol"]%>
-                <td><%= x["name"] %></td>
-                <!-- <%= x["name"] %>: $<%= x["price_usd"] %> Rank:<%= x["rank"] %> -->
+                <td><%=link_to x["name"],crypto %></td>
               <% end %>
             <% end %>
 
-          </div>
+            <td><%= crypto.symbol %></td>
+            <td><%= crypto.cost_per %></td>
+            <td><%= crypto.amount_owned %></td>
 
-          <td><%= crypto.symbol %></td>
-
-          <td><%= crypto.cost_per %></td>
-          <td><%= crypto.amount_owned %></td>
-          <td><%= link_to 'Show', crypto %></td>
-          <td><%= link_to 'Edit', edit_crypto_path(crypto) %></td>
-          <td><%= link_to 'Destroy', crypto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+          </tr>
+        <% end %>
       <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Crypto', new_crypto_path,class: "btn btn-default" %>
+  <%= link_to 'New Crypto', new_crypto_path,class: "btn btn-default" %>
