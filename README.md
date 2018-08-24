@@ -10,7 +10,7 @@
 
 
 
-Cryptoyptocurrency site for those who are new to cryptocurrencies
+
 
 ## What is knewtocrypto.com?
 Cryptoyptocurrency site for those who are new to cryptocurrencies
