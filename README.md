@@ -1,1 +1,1 @@
-Crypto site  for beginners
+Cryptoyptocurrency site for those who are new to cryptocurrencies
