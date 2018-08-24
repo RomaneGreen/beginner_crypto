@@ -13,6 +13,7 @@ class CryptosController < ApplicationController
     @coins = JSON.parse(@response)
     @cryptos = Crypto.all
     @lookup_crypto = JSON.parse(@response)
+    @profit_loss = 0
   end
 
   # GET /cryptos/1
