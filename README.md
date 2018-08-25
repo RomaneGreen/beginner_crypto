@@ -13,5 +13,8 @@
 
 
 ## What is knewtocrypto.com?
-Cryptoyptocurrency site for those who are new to cryptocurrencies
-[dev.to](http://knewtocrypto.com) (or just DEV) is a platform where software developers write articles, take part in discussions, and build their professional profiles. We value supportive and constructive dialogue in the pursuit of great code and career growth for all members. The ecosystem spans from beginner to advanced developers, and all are welcome to find their place within our community. 
+Knewtocrypto.com is a site primarily for people who are new to cryptocurrencies.
+[knewtocrypto.com](http://knewtocrypto.com) is a platform where those who are new to cryptocurrencies can learn more about them in detail - in addition to starting or managing a crypto porfolio.The site was made for those who are new to the Crypto game to gain knowledge in a friendly intuitive way.This site is primarily targeted towards new investors,but all are welcome to join and grow!
+
+## Coming soon to knewtocrypto.com...
+[knewtocrypto.com](http://knewtocrypto.com) forums!
