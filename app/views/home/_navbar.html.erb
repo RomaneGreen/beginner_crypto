@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
 
     <div class="navbar-header">
@@ -9,35 +9,32 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to "Crypto Portfolio", root_path,class: "navbar-brand" %>
-
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav"></ul>
 
       <ul class="nav navbar-nav navbar-right">
 
         <% if !user_signed_in? %>
-          <li><%= link_to "Sign up", new_user_registration_path %>
+          <li><%= link_to "Home", root_path %>
+            <li><%= link_to "About", home_about_path %>
             <li><%= link_to "Log in", new_user_session_path %>
-            <li><%= link_to "About Us", home_about_path %>
-            <li><%= link_to "Home", root_path %>
+            <li><%= link_to "Sign up", new_user_registration_path %>
+
             <% else %>
-            <li><%= link_to "Add new", new_crypto_path %>
-            <li><%= link_to "List Cryptos", cryptos_path %>
-            <li><%= link_to "Home", root_path %>
-            <li><%= link_to "About Us", home_about_path %>
-            <li><%= link_to "Look up", home_lookup_path %>
+
+            <li><%= link_to "Crypto Info", home_about_path %>
+            <li><%= link_to "Add new Cryptos", new_crypto_path %>
+            <li><%= link_to "Manage your Cryptos", cryptos_path %>
+            <li><%= link_to "Crypto Lookup", home_lookup_path %>
             <li><%= link_to "Log out", destroy_user_session_path,method: :delete %>
             <li><%= link_to "Edit profile", edit_user_registration_path %>
             <% end %>
         </ul>
 
-    </ul>
-  </div>
-  <!-- /.navbar-collapse -->
-</div>
-
-<!-- /.container-fluid -->
-</nav>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
