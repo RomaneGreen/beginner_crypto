@@ -2,26 +2,25 @@
 </h4>
 
 <%= form_tag home_lookup_path, method: :POST, class: "navbar-form navbar-left search-form" do %>
-<%= text_field_tag( 'search',nil,placeholder: "Enter Crypto Symbol",class: "form-control") %>
+<%= text_field_tag( 'search',nil,placeholder: "Enter Crypto Symbol",class: "form-control",:required => true) %>
 <%= submit_tag 'Lookup Stock Quote' %>
 <% end %>
 <br>
 <br>
-
+<% @no_goof = 'kkk' %>
 <div class="container">
 
-<% if @symbol %>
-  <%for x in @lookup_coin %>
-    <% if @symbol == x["symbol"]%>
-      <%= x["name"] %>: $<%= x["price_usd"] %>
-      Rank:<%= x["rank"] %>
-
-      <br/>
-      <br/>
-    <% else %>
-      <h1></h1>
-    <% end %>
-  <% end %>
-<% end %>
-
-</div>
+  <% if @symbol %>
+    <%for x in @lookup_coin %>
+      <% if  x["symbol"] != @symbol %>
+        <%@symbol = 'ggg'%>
+          <%=@symbol %>
+          <% elsif @symbol == x["symbol"]%>
+            <%= x["name"] %>: $<%= x["price_usd"] %>
+            Rank:<%= x["rank"] %>
+            <br/>
+            <br/>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>

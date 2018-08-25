@@ -20,16 +20,8 @@ def lookup
 @symbol = params[:search]
 if @symbol
 @symbol =  @symbol.upcase
-if @symbol != ''&& @symbol.size > 4
-@symbol = "Not a valid Currency!"
 end
 end
-  if @symbol == ''
-  @symbol = "Hey you forgot to enter a Currency!"
-  end
-
-end
-
 
   def about
     require 'net/http'
