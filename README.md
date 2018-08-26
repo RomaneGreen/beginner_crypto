@@ -18,3 +18,7 @@ Knewtocrypto.com is a site primarily for people who are new to cryptocurrencies.
 
 ## Coming soon to knewtocrypto.com...
 [knewtocrypto.com](http://knewtocrypto.com) forums!
+
+## License
+
+This project is released under the [MIT license](LICENSE).
