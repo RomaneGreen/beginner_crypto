@@ -14,7 +14,8 @@
 
 <div class="field">
   <%= form.label :symbol %>
-  <%= form.text_field :symbol %>
+  <%= form.text_field :symbol,required: :true %>
+  <!-- <%=form.select("symbol", Crypto.all.map {|p| [ p.symbol,p.cost_per] })%> -->
 </div>
 
 <div class="field">
@@ -24,15 +25,15 @@
 
 <div class="field">
   <%= form.label :cost_per %>
-  <%= form.text_field :cost_per %>
+  <%= form.text_field :cost_per,required: :true %>
 </div>
 
 <div class="field">
   <%= form.label :amount_owned %>
-  <%= form.text_field :amount_owned %>
+  <%= form.text_field :amount_owned,required: true %>
 </div>
 
 <div class="actions">
-  <%= form.submit %>
+  <%= form.submit class:"btn btn-warning" %>
 </div>
 <% end %>

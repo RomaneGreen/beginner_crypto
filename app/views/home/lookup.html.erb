@@ -1,4 +1,4 @@
-<h4>Crypto Currency lookup
+<h4 class="txtw">Crypto Currency lookup
 </h4>
 
 <%= form_tag home_lookup_path, method: :POST, class: "navbar-form navbar-left search-form" do %>
@@ -7,20 +7,19 @@
 <% end %>
 <br>
 <br>
-<% @no_goof = 'kkk' %>
+
 <div class="container">
 
-  <% if @symbol %>
-    <%for x in @lookup_coin %>
-      <% if  x["symbol"] != @symbol %>
-        <%@symbol = 'ggg'%>
-          <%=@symbol %>
-          <% elsif @symbol == x["symbol"]%>
-            <%= x["name"] %>: $<%= x["price_usd"] %>
-            Rank:<%= x["rank"] %>
-            <br/>
-            <br/>
-          <% end %>
-        <% end %>
+<% if @symbol %>
+  <%for x in @lookup_coin %>
+    <% if  x["symbol"] != @symbol %>
+
+      <% elsif @symbol == x["symbol"]%>
+        <%= x["name"] %>: $<%= x["price_usd"] %>
+        Rank:<%= x["rank"] %>
+        <br/>
+        <br/>
       <% end %>
-    </div>
+    <% end %>
+  <% end %>
+</div>

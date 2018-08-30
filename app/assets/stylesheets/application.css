@@ -17,12 +17,35 @@
  body {
    padding-top: 70px;
       background-color: #0667D0;
+      color: black;
  }
  .about{
    background-color: white;
  }
 
- body{
-   color: black;
 
- }
+
+html {
+  background-color: #0667D0;
+}
+
+.index {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+
+.deviseform {
+  background-color: red;
+}
+
+
+.txtw {
+  color: white;
+  text-decoration-color: white;
+}
+
+th,.field {
+  color: white;
+}
