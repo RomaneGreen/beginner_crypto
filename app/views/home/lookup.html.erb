@@ -20,8 +20,11 @@
     <% if  x["symbol"] != @symbol %>
 
       <% elsif @symbol == x["symbol"]%>
-        <%= x["name"] %>: $<%= x["price_usd"] %>
-        Rank:<%= x["rank"] %>
+        <p class="cluform btn btn-warning text-center">
+          <%= x["name"] %>: $<%= x["price_usd"] %>
+          <br>
+          Rank:<%= x["rank"] %>
+        </p>
         <br/>
         <br/>
       <% end %>

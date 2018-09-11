@@ -12,27 +12,29 @@
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <%=crypto_name%>
+            <strong class="cinfo">
+              <%=crypto_name%></strong>
+
           </div>
           <div class="panel-body">
 
-            <h1><%=@crypto.symbol.upcase%></h1>
+            <h1 class='ctitle'><%=@crypto.symbol.upcase%></h1>
             <br>
-            <p>
+            <p class='cinfo'>
               <strong>Rank:</strong>
               <%=crypto_rank%>
             </p>
-            <p>
+            <p class='cinfo'>
               <strong>Current_price:</strong>
               <%=number_to_currency(crypto_price)%>
             </p>
-            <p>
+            <p class='cinfo'>
               <strong>Cost paid per:</strong>
               <%= number_to_currency(@crypto.cost_per) %>
             </p>
 
-            <p>
-              <strong>Amount owned:</strong>
+            <p class='cinfo'>
+              <strong class='cinfo'>Amount owned:</strong>
               <%= @crypto.amount_owned %>
             </p>
 
