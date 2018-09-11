@@ -1,9 +1,14 @@
 <h4 class="txtw">Crypto Currency lookup
 </h4>
 
-<%= form_tag home_lookup_path, method: :POST, class: "navbar-form navbar-left search-form" do %>
-<%= text_field_tag( 'search',nil,placeholder: "Enter Crypto Symbol",class: "form-control",:required => true) %>
-<%= submit_tag 'Lookup Stock Quote' %>
+<div class="col-md-4 col-md-offset-4">
+  <div class="input-group">
+    <span class="input-group-btn">
+      <%= form_tag home_lookup_path, method: :POST, class: "navbar-form navbar-left search-form " do %>
+    </span>
+    <%= text_field_tag( 'search',nil,placeholder: "Enter Crypto Symbol",class: "form-control sf",:required => true) %><%= submit_tag 'Lookup Stock Quote',class:"sqbutton btn btn-warning" %>
+  </div>
+</div>
 <% end %>
 <br>
 <br>

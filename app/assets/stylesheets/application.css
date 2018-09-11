@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+@import url('https://fonts.googleapis.com/css?family=Average');
  body {
    padding-top: 70px;
       background-color: #07393C;
@@ -44,8 +44,41 @@ html {
 .txtw {
   color: white;
   text-decoration-color: white;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: .5rem;
 }
 
-th {
+.sf{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.sqbutton{
+
+}
+
+
+td,th {
   color: white;
+}
+td {
+  background-color: #f0ad4e;
+}
+.tltp{
+  color: white;
+
+}
+.clbutton{
+ background-color: white;
+
+}
+
+.lmbutton{
+background-color: white;
+
+}
+.ncbutton {
+  float: right;
+  margin-top: -8rem;
 }
