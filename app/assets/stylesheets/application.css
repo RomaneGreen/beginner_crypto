@@ -82,3 +82,9 @@ background-color: white;
   float: right;
   margin-top: -8rem;
 }
+
+.styledtext{
+  font-family: 'Average', serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
