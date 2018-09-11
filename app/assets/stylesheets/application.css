@@ -71,12 +71,16 @@ td {
 }
 .clbutton{
  background-color: white;
-
+ margin-right: 1rem;
+ padding-right: 5rem;
+ text-align: center;
+ text-indent: 1rem;
 }
 
 .lmbutton{
 background-color: white;
-
+padding-left: 5rem;
+padding-right: 5rem;
 }
 .ncbutton {
   float: right;
