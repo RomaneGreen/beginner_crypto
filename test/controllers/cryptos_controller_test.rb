@@ -9,6 +9,22 @@ class CryptosControllerTest < ActionDispatch::IntegrationTest
     get new_crypto_url
     assert_response :found
    end
+   test "Log in and goes to crypto porfolio" do
+    post user_session_path, params: {user: {
+      email:    users(:user_one).email,
+      password: "password"
+    }}
+    get cryptos_url
+    assert_response :success
+  end
+  test "Log in and create add new crypto to profile" do
+   post user_session_path, params: {user: {
+     email:    users(:user_one).email,
+     password: "password"
+   }}
+   get new_crypto_url
+   assert_response :success
+ end
 #   setup do
 #     @crypto = cryptos(:one)
 #   end
