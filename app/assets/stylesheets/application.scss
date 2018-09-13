@@ -9,21 +9,21 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *= require animate
  *= require_tree .
  *= require_self
  */
 @import url('https://fonts.googleapis.com/css?family=Average');
- body {
-   padding-top: 70px;
-      background-color: #07393C;
-      color: 0A090C;
- }
- .about{
-   background-color: white;
- }
 
+body {
+  padding-top: 70px;
+  background-color: #07393C;
+  color: 0A090C;
+}
 
+.about {
+  background-color: white;
+}
 
 html {
   background-color: #07393C;
@@ -35,76 +35,78 @@ html {
   color: black;
 }
 
-
 .deviseform {
   background-color: red;
 }
-
 
 .txtw {
   color: white;
   text-decoration-color: white;
   font-size: 5rem;
   text-align: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.sf{
+.sf {
   margin: 0 auto;
   width: 80%;
 }
 
-.sqbutton{
+.sqbutton {}
 
-}
-
-
-td,th {
+td,
+th {
   color: white;
 }
+
 td {
   background-color: #f0ad4e;
 }
-.tltp{
+
+.tltp {
   color: white;
-
-}
-.clbutton{
- background-color: white;
- margin-right: 1rem;
- padding-right: 5rem;
- text-align: center;
- text-indent: 1rem;
 }
 
-.lmbutton{
-background-color: white;
-padding-left: 5rem;
-padding-right: 5rem;
+.clbutton {
+  display: none;
+  background-color: white;
+  margin-right: 1rem;
+  padding-right: 5rem;
+  text-align: center;
+  text-indent: 1rem;
 }
+
+.lmbutton {
+  display: none;
+  background-color: white;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .ncbutton {
   float: right;
   margin-top: -8rem;
 }
 
-.styledtext{
+.styledtext {
   font-family: 'Average', serif;
   font-size: 1.8rem;
   line-height: 3rem;
 }
 
-.cluform{
-
+.cluform {
   color: white;
   font-size: 2.5rem;
   margin-left: 37.5rem;
-  margin-top:5rem;
+  margin-top: 5rem;
 }
+
 .styledheader {
   font-size: 5rem;
   margin-bottom: 1.3rem;
   text-align: center;
 }
-.definitions{
+
+.definitions {
   color: white;
 }
