@@ -23,6 +23,6 @@ $( document ).ready(function() {
     // alert( "ready!" );
     $(".hindex").effect( "bounce", "slow" );
     $(".hindexx").delay(1000).effect( "bounce", "slow" );
-     $( ".lmbutton" ).delay(2500).fadeIn(1100);
-      $( ".clbutton" ).delay(2500).fadeIn(1100);
+     $( ".lmbutton" ).hide(200).delay(2500).fadeIn(1100);
+      $( ".clbutton" ).hide(200).delay(2500).fadeIn(1100);
 });
