@@ -4,13 +4,7 @@
 
 
 
-<p align="left">
-  <a href="https://www.ruby-lang.org/en/">
-    <img src="https://img.shields.io/badge/Rails-v5.1.6-yellow.svg" alt="ruby version"/>
-  </a>
-  <a href="http://rubyonrails.org/">
-    <img src="https://img.shields.io/badge/Ruby-v2.5.1-yellow.svg" alt="rails version"/>
-  </a>
+
 
 
 
