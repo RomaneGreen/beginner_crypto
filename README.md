@@ -34,10 +34,11 @@ If you'd like to make some changes yourself, see the following:
 4. Finally, submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) with your changes!
 
 
-## License
 
-This project is released under the [MIT license](LICENSE).
+## Test Credentials
 
+email - Test@gmail.com
+password - testdemo
 
 ![addcrypto](https://user-images.githubusercontent.com/19755484/51421933-a763c280-1b74-11e9-864f-b1dca20f19f8.png)
 
@@ -48,4 +49,6 @@ This project is released under the [MIT license](LICENSE).
 ![lookupcrypto](https://user-images.githubusercontent.com/19755484/51421942-cb270880-1b74-11e9-92e1-f1c9d7f00658.png)
 
 
+## License
 
+This project is released under the [MIT license](LICENSE).
